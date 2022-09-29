@@ -1,0 +1,26 @@
+.navb {
+  align-items: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  display: flex;
+  font-size: 15px;
+  flex-direction: column-reverse;
+  padding: 15px;
+  background-image: linear-gradient(to right, #f1d3d3, white);
+}
+
+.nav-ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  float: left;
+}
+
+.nav-li {
+  text-decoration: none;
+}
+
+.nav-button {
+  color: #080813 !important;
+  align-items: center;
+  margin: 2px;
+}
