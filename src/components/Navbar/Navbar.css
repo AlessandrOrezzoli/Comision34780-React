@@ -22,5 +22,6 @@
 .nav-button {
   color: #080813 !important;
   align-items: center;
-  margin: 2px;
+  margin: 8px;
+  border-radius: 15px;
 }
