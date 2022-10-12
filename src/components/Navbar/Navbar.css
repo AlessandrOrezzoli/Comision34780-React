@@ -23,5 +23,6 @@
   color: #080813 !important;
   align-items: center;
   margin: 8px;
-  border-radius: 15px;
+  border: 0;
+  border-radius: 5px;
 }
