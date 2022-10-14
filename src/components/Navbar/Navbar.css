@@ -17,6 +17,7 @@
 
 .nav-li {
   text-decoration: none;
+
 }
 
 .nav-button {
@@ -25,4 +26,9 @@
   margin: 8px;
   border: 0;
   border-radius: 5px;
+  
+}
+
+.link {
+  text-decoration: none;
 }

@@ -1,75 +1,75 @@
 const products = [
     {
         id: '1', 
-        name: 'PhiladelfiaRoll', 
-        price: 1000, 
-        category: 'SushiRoll', 
-        img: "/img/PhiladelfiaRoll.PNG", 
+        name: 'Esmalte de Gel', 
+        price: 1860, 
+        category: 'Producto', 
+        img: "/img/1-Esmalte-Color-Gel-UV-LED-Semipermanente-x15ml-Meline.webp", 
         stock: 15, 
-        description:'Relleno de Salmon y queso crema, con sesamo'
+        description:'Esmalte de Gel Semipermanente color X 15ml'
     },
     { 
         id: '2',
-        name: 'HuancainaRoll', 
-        price: 1000, 
-        category: 'SushiRoll', 
-        img: "/img/huancainaRoll.PNG", 
+        name: 'Removedor de Esmalte', 
+        price: 1790, 
+        category: 'Producto', 
+        img: "/img/2-Removedor-de-Esmalte-Semipermanente-x500ml-Anush.webp", 
         stock: 15, 
-        description:'Relleno de langostinos y palta, con salmón por fuera, bañado en salsa huancaína, sésamo, cilantro y crocante de batata'
+        description:'Removedor de Esmalte Semipermanente x500ml'
     },
     {
         id: '3', 
-        name: 'HawaiRoll', 
+        name: 'Cápsulas Para Remover Esmalte', 
         price: 1000, 
-        category: 'SushiRoll', 
-        img: "/img/HawaiRoll.PNG", 
+        category: 'Producto', 
+        img: "/img/3-Capsulas-Para-Remover-Esmalte-Semipermanente-x10u-Thuya.webp", 
         stock: 10, 
-        description:'Relleno de salmón ahumado y palta, recubierto por tataki de salmón aderezado con merken, bañado con salsa picante y maíz cancha.'
+        description:'Cápsulas Para Remover Esmalte Semipermanente x10u Thuya'
 },
 { 
         id: '4', 
-        name: 'CordobaRoll', 
-        price: 1000, 
-        category: 'SushiRoll', 
-        img: "/img/CordobaRoll.PNG", 
+        name: 'Maletín para Esmaltes', 
+        price: 11290, 
+        category: 'Producto', 
+        img: "/img/4-Maletin-para-Esmaltes-Modelo-1438-T-C.webp", 
         stock: 10, 
-        description:'Relleno de salmón, langostinos, palta y queso crema, con salmón por fuera y salsa de sésamo.'
+        description:'Maletín para Esmaltes Modelo 1438 T-C'
 },
 { 
         id: '5', 
-        name: 'Combinado Cordoba 15p', 
+        name: 'Manicuria Semipermanente', 
         price: 1900, 
-        category: 'CombinadoSushi', 
-        img: "/img/CombinadoSushiCordoba15p.PNG", 
+        category: 'Servicio', 
+        img: "/img/m7.jpeg", 
         stock: 20, 
-        description:' Cordoba Roll, Placer Real, Feel Roll, Honey Roll, Philadelphia Roll, Sashimi de Salmón y Niguiri de Salmón.'
+        description:'Manicuria + esmaltado semipermanente + decoracion adiciona (Opcional)'
 },
 {
         id: '6', 
-        name: 'Combinado Blue Sea 15p', 
-        price: 1900, 
-        category: 'CombinadoSushi', 
-        img: "/img/CombinadoBlueSea15p.PNG", 
+        name: 'Esculpidas con Semipermanente', 
+        price: 2900, 
+        category: 'Servicio', 
+        img: "/img/m13.jpeg", 
         stock: 15, 
-        description:'Cordoba Roll, Celerity Roll, Feel Roll, Soul Roll, Niguiri Fuego Thai. Incluye salsa'
+        description:'Manicuria Esculpidas + esmaltado semipermanente + decoracion adiciona (Opcional)'
 },
 {
         id: '7', 
-        name: 'Combinado Roll & Roll 30p', 
-        price: 3500, 
-        category: 'CombinadoSushi', 
-        img: "/img/CombinadoRoll&Roll30p.PNG", 
+        name: 'Depilacion Laser', 
+        price: 10000, 
+        category: 'Servicio', 
+        img: "/img/7-depilacion-images.jfif", 
         stock: 10, 
-        description:'Placer Real, Soul Roll, Feel Roll, Geishas de Salmón, Futurama Roll, Sweet Roll, SPF Roll.'
+        description:'Depilacion laser de cuerpo completo 1 secion'
 },
 {
         id: '8', 
-        name: 'Combinado Intense 30p', 
-        price: 3500, 
-        category: 'CombinadoSushi', 
-        img: "/img/CombinadoIntense30p.PNG", 
+        name: 'Micro-Blading', 
+        price: 25000, 
+        category: 'Servicio', 
+        img: "/img/8-micro-descarga.jfif", 
         stock: 15, 
-        description:' Placer Real, Merken Roll, Sweet Roll, Feel Roll, Sashimi de salmón, Niguiri Anticuchero.'  
+        description:'Diseño de sejas atrabes de la tecnica de micro-blading '  
 }
 ]
 

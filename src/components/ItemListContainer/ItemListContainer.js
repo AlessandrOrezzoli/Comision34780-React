@@ -1,31 +1,45 @@
-import './ItemListContainer.css'
 import { useState, useEffect } from "react"
-import { getProducts } from "../../productos"
+import { useParams } from 'react-router-dom'
+import { getProducts, getProductsByCategory } from "../../productos"
+import ItemList from '../ItemList/ItemList'
+import './ItemListContainer.css'
+import { Waveform } from '@uiball/loaders'
 
 const ItemListContainer = () => {
 
     const [products, setProducts] = useState([])
+    const [loading, setLoading] = useState(true)
+    const { categoryId } = useParams()
 
-    useEffect(()=> {
-        getProducts()
-            .then(products => {
-                setProducts(products)
+    useEffect(() => {
+        setLoading(true)
+        const productosFunction = categoryId ? getProductsByCategory : getProducts
+        productosFunction(categoryId).then(response => {
+            setProducts(response)
+        }).catch(error => {
+            console.log(error)
+        }).finally(() => {
+            setLoading(false)
+        })
+    }, [categoryId])
 
-            })
-    }, [])
+    if (loading) {
+        return (
+            <div>
+                <Waveform
+                    size={40}
+                    lineWeight={3.5}
+                    speed={1}
+                    color="black"
+                />
+            </div>
+        )
+    }
 
     return (
         <div>
             <h1>Lista de Productos</h1>
-            { products.map(prod => {
-                return (
-                    <div key={prod.id}>
-                        <img src={prod.img} alt={prod.nombre} style={{ width: 100}}/>
-                        <h3>{prod.nombre}</h3>
-                        <p>Price: ${prod.price}</p>
-                    </div>
-                )
-            })}
+            <ItemList products={products} />
         </div>
     )
 }
