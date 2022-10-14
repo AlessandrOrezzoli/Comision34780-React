@@ -3,6 +3,14 @@
     justify-content: center;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif, cursive;
-    margin-top: 8rem;
+    margin-top: 1rem;
+    padding: 1rem;
+}
 
+.loading {
+    height: 93vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

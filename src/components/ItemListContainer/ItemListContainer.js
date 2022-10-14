@@ -25,7 +25,7 @@ const ItemListContainer = () => {
 
     if (loading) {
         return (
-            <div>
+            <div className="loading">
                 <Waveform
                     size={40}
                     lineWeight={3.5}
@@ -38,7 +38,7 @@ const ItemListContainer = () => {
 
     return (
         <div>
-            <h1>Lista de Productos</h1>
+            <h1 className="titulo">Lista de Productos</h1>
             <ItemList products={products} />
         </div>
     )

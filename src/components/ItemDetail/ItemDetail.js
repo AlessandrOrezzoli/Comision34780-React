@@ -1,5 +1,6 @@
 import "../../productos"
 import Counter from "../Contador/Contador"
+import './ItemDetail.css'
 
 const ItemDetail = ({ id, img, name, category, price, description, stock }) => {
 
@@ -11,8 +12,8 @@ const ItemDetail = ({ id, img, name, category, price, description, stock }) => {
     }
     
     return (
-       <div key= {id}>
-            <img src={img} alt={name}/>
+       <div className="contenedor-itemDetail" key= {id}>
+            <img src={img} alt={name} width="100px"/>
             <h2>{name}</h2>
             <p>{category}</p>
             <p>price: ${price}</p>
