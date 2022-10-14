@@ -4,7 +4,7 @@ const Counter = ({ stock, initial = 1, onAdd }) => {
     const [counter, setCounter] = useState(initial)
 
     const restar = () => {
-        if (counter > 1) {
+        if (counter > 0) {
             setCounter(counter - 1)
         }
     }
