@@ -24,7 +24,7 @@ const ItemDetailContainer = () => {
     if (loading) {
 
         return (
-            <div>
+            <div className="loading">
                 < Waveform
                     size={40}
                     lineWeight={3.5}

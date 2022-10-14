@@ -13,3 +13,11 @@
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.45);
     color: rgba(0, 0, 0, 0.74);
 }
+
+.loading {
+    height: 93vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
