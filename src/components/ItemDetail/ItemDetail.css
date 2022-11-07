@@ -1,8 +1,8 @@
 .contenedor-itemDetail {
     width: 650px;
-    margin: auto;
-    margin: 2rem auto 2rem auto;
-    padding: 5px;
+    height: 650px;
+    margin: 0.5rem auto 0.5rem auto;
+    padding: 1px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,7 +10,7 @@
     background-color: rgba(245, 211, 242, 0.774);
     border: 1px solid;
     border-radius: 5px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.45);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
     color: rgba(0, 0, 0, 0.74);
 }
 
@@ -20,4 +20,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.button {
+    color: #080813 !important;
+    align-items: center;
+    margin: 1px;
+    border: 2px solid;
+    border-radius: 1px;
+    background-color: rgba(206, 194, 194, 0.558);
+    text-decoration: none;
+    padding: 1px;
+
+
 }

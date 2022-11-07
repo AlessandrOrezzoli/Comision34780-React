@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react"
-import { getProductById } from "../../productos"
 import ItemDetail from "../ItemDetail/ItemDetail"
 import { useParams } from 'react-router-dom'
 import { Waveform } from '@uiball/loaders'
-import "../../productos"
+import { getDoc, doc } from "firebase/firestore"
+import { db } from "../../services/firebase"
 
 
 const ItemDetailContainer = () => {
@@ -12,13 +12,15 @@ const ItemDetailContainer = () => {
     const { productId } = useParams()
 
     useEffect(() => {
-        setLoading(true)
-        getProductById(productId)
-            .then(products => {
-                setProduct(products)
-            }).finally(() => {
-                setLoading(false)
-            })
+        const docRef = doc(db, 'products', productId)
+        getDoc(docRef).then(response => {
+            const data = response.data()
+            const productAdapted = { id: response.id, ...data }
+            setProduct(productAdapted)
+        }).finally(() => {
+            setLoading(false)
+        })
+       
     }, [productId])
 
     if (loading) {
