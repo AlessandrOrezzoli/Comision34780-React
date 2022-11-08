@@ -20,7 +20,7 @@ const ItemDetail = ({ id, img, name, category, price, description, stock }) => {
     const counterAdded = getProductCounter(id)
 
     return (
-        <div className="contenedor-itemDetail" key={id}>
+        <div className="cont-itemDetail" key={id}>
             <img src={img} alt={name} width="100px" />
             <h2>{name}</h2>
             <p>{category}</p>
@@ -30,11 +30,9 @@ const ItemDetail = ({ id, img, name, category, price, description, stock }) => {
                 {stock !== 0 ? <Counter onAdd={handleOnAdd} stock={stock} initial={counterAdded} /> : <p>No hay Stock</p>}
                 {!added ? true :
                     <div>
-                        <Link to='/cart' className="button">Ir al carrito</Link>
-                        <Link to='/' className="button">Seguir comprando</Link>
-                    </div>}
-                {added ? true
-                    : <Link to='/' className="button">Seguir comprando</Link>}
+                        <Link to='/cart' className="button"><button>Ir al carrito</button></Link>
+                        <Link to='/' className="button"><button>Seguir Comprando</button></Link>
+                    </div>} 
             </div>
         </div>
 
