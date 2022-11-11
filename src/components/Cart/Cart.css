@@ -1,0 +1,7 @@
+.cont-titulo {
+    display: flex;
+    margin: 2.5rem;
+    text-align: center;
+    justify-content: space-around;
+    font-size: 3rem;
+}

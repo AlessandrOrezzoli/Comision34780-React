@@ -1,4 +1,5 @@
 import { useState } from "react"
+import './Contador.css'
 
 const Counter = ({ stock, initial = 0, onAdd }) => {
     const [counter, setCounter] = useState(initial)
@@ -16,19 +17,19 @@ const Counter = ({ stock, initial = 0, onAdd }) => {
     }
 
     return (
-        <div>
+        <div >
             <div>
-                <div>
-                    <button onClick={restar}>-</button>
-                    <p>{counter}</p>
-                    <button onClick={sumar}>+</button>
+                <div className="cont-Contador">
+                    <button className="button-Contador" onClick={restar}>-</button>
+                    <p className="cont-Num">{counter}</p>
+                    <button className="button-Contador" onClick={sumar}>+</button>
                 </div>
                 <div>
-                    <p>Stock disponible: {stock} </p>
+                    <p className="cont-stock">Stock disponible: {stock} </p>
                 </div>
             </div>
             <div>
-                <button onClick={() => onAdd(counter)}>Agregar al carrito</button>
+                <button className="button-agregar" onClick={() => onAdd(counter)}>Agregar al carrito</button>
             </div>
         </div>
     )

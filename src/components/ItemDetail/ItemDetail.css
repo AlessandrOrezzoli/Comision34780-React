@@ -8,8 +8,8 @@
     justify-content: center;
     align-items: center;
     background-color: rgba(245, 211, 242, 0.774);
-    border: 1px solid;
-    border-radius: 5px;
+    border: 2px solid;
+    border-radius: 10px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
     color: rgba(0, 0, 0, 0.74);
 }
@@ -22,14 +22,12 @@
     align-items: center;
 }
 
-.button {
-    color: #080813 !important;
+.button-ItemDetail {
+    color: #080813;
     align-items: center;
-    margin: 1px;
-    border-radius: 1px;
-    background-color: rgba(206, 194, 194, 0.558);
+    margin: 10px;
     text-decoration: none;
-    padding: 1px;
-
-
+    padding: 5px;
+    background: lightgrey;
+    border-radius: 10px;
 }

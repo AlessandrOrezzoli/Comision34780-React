@@ -30,8 +30,8 @@ const ItemDetail = ({ id, img, name, category, price, description, stock }) => {
                 {stock !== 0 ? <Counter onAdd={handleOnAdd} stock={stock} initial={counterAdded} /> : <p>No hay Stock</p>}
                 {!added ? true :
                     <div>
-                        <Link to='/cart' className="button"><button>Ir al carrito</button></Link>
-                        <Link to='/' className="button"><button>Seguir Comprando</button></Link>
+                        <Link to='/cart'><button className="button-ItemDetail">Ir al carrito</button></Link>
+                        <Link to='/'><button className="button-ItemDetail">Seguir Comprando</button></Link>
                     </div>} 
             </div>
         </div>

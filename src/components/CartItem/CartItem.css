@@ -1,0 +1,15 @@
+.cont-CartItem {
+    font-size: 1.5rem;
+    border-radius: 3px;
+    border: 3px solid black;
+    padding: 1rem;
+    margin: 2rem;
+    justify-content: space-around;
+}
+
+.titulos-pro {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    text-align: center;
+}

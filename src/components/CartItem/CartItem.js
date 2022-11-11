@@ -1,6 +1,7 @@
 import React from 'react'
 import { CartContext } from '../../context/CartContext'
 import { useContext } from 'react'
+import './CartItem.css'
 
 
 
@@ -8,11 +9,11 @@ const CartItem = ({id,  name, price, counter}) => {
     const {removeItem} = useContext (CartContext);
 
 return (    
-    <div>
-        <h1>{name}</h1>
-        <p>Precio U: ${price}</p>
-        <p>total: ${counter * price}</p>
-        <button onClick={()=>removeItem(id)}> Eliminar</button>
+    <div className='d-flex cont-CartItem'>
+        <h1 className='titulos-pro' >{name}</h1>
+        <p className='titulos-pro'>Precio U: ${price}</p>
+        <p className='titulos-pro'>total: ${counter * price}</p>
+        <button className='button-ItemDetail' onClick={()=>removeItem(id)}> Eliminar</button>
     </div>
 )
 }
