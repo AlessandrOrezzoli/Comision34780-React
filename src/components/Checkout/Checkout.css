@@ -1,0 +1,13 @@
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none; margin: 0;}
+input[type=number] {-moz-appearance: textfield;}
+
+.imput-Checkout {
+    color: #080813;
+    align-items: center;
+    margin: 10px;
+    text-decoration: none;
+    padding: 5px;
+    background: rgb(173, 239, 198);
+    border-radius: 10px;
+}
